@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,9 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-  }
+  } */
 
-.sidebar {
+/* .sidebar {
   background-color: #004f73;
   color: #fff;
   padding: 20px;
@@ -31,9 +31,5 @@ body {
 .sidebar ul li a{
   color: #fff;
   text-decoration: none;
-}
+} */
 
-.content {
-  flex: 1;
-  padding: 20px;
-}
