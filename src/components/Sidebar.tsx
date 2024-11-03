@@ -2,8 +2,8 @@ import "./Sidebar.css"
 
 export function Sidebar() {
   return (
-    <>
-      <h1>Nome da Empresa</h1>
+    <div className="sidebar">
+      <h2>Nome da Empresa</h2>
 
       <h3>Cadastros Comuns</h3>
       <div>
@@ -20,6 +20,6 @@ export function Sidebar() {
       
       <h3>Grupo de Acessos</h3>
       <h3>Usuários</h3>
-    </>
+    </div>
   )
 }
