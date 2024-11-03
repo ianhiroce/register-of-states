@@ -1,5 +1,7 @@
+import { Sidebar} from "../components/Sidebar"
+
 export function Home () {
   return (
-    <h1>Olá Mundo</h1>
+    <Sidebar />
   )
 }
