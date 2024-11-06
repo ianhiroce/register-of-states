@@ -1,0 +1,11 @@
+.header-content {
+    margin-left: 300px;
+}
+
+.header-content p {
+    color: red;
+}
+
+.header-content h3 {
+    color: blue;
+}

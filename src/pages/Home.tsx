@@ -6,9 +6,9 @@ import "./Home.css"
 export function Home () {
   return (
     <>
+      <Sidebar />
       <Header />
       <Table />
-      <Sidebar />
     </>
   )
 }
