@@ -1,14 +1,29 @@
+import "./Register.css"
+import { useNavigate } from "react-router-dom";
+
 export function Register() {
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event?.preventDefault();
+    alert("Formulário enviado")
+  }
+
+  const navigate = useNavigate()
+
+  const handleCancel = () => {
+    navigate(-1);
+  }
+
   return (
     <div className="modal-container">
-      <form id="form" action="form" className="modal-form">
+      <form id="form" action="form" className="modal-form" onSubmit={ handleSubmit }>
         <h3>Adicionar Estado</h3>
         <div className="form-content">
           <div className="form-group">
             <label htmlFor="code">Código</label>
             <input
               type="number"
-              placeholder="__"
+              placeholder="_ _"
               maxLength={ 2 }
               className="input-field"
             />
@@ -29,7 +44,6 @@ export function Register() {
               placeholder="Informe o nome do estado"
               className="input-field"
             />
-            <span className="error-message">Mensagem de erro</span>
           </div>
           <div className="form-group">
             <label htmlFor="region">Região</label>
@@ -45,16 +59,15 @@ export function Register() {
           <div className="form-group">
             <label htmlFor="extinction-date">Data de Extinção</label>
             <input
-              type="text"
-              placeholder="__/__/____"
+              type="date"
+              placeholder="__/__/____                     📅"
               className="input-field date-field"
             />
-            <button type="button" className="calendar-button">📅</button>
           </div>
         </div>
         <div className="form-buttons">
           <button type="submit" className="save-button">Salvar</button>
-          <button type="button" className="cancel-button">Cancelar</button>
+          <button type="button" className="cancel-button" onClick={ handleCancel }>Cancelar</button>
         </div>
       </form>
     </div>
