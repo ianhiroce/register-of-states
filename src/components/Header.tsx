@@ -5,10 +5,17 @@ export function Header() {
     <>
     <div className="header-content">
 
-      <p>Nome do Cliente da Empresa</p>
+      <div className="menu-icon">☰</div>
 
-      <h3>ESTADOS</h3>
+      <p className="client-name">Nome do Cliente da Empresa</p>
+      <img src='../assets/bandeira.jpg' alt="Bandeira do Brasil" />      
+
     </div>
+
+    <div className="header-title">
+      <h3 className="page-title">ESTADOS</h3>
+    </div>
+    
     </>
   )
 }

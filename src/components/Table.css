@@ -1,3 +1,45 @@
+/* Estilização do cabeçalho */
+
 .table-content {
     margin-left: 300px;
 }
+.table-content thead {
+    background-color: #f0f5fa;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #d1e3eb;
+  }
+  
+  .table-content tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7ecef;
+  }
+  
+  .table-content tbody tr:nth-child(even) {
+    background-color: #f9fbfc;
+  }
+
+  .table-content td, .table-content th {
+    padding: 12px 15px; 
+    text-align: left;
+  }
+  
+  .table-content .action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dataTables_paginate .paginate_button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+  
+  .dataTables_paginate .paginate_button:hover {
+    background-color: #0056b3;
+  }
+  
